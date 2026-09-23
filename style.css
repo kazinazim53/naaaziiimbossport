@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: rgb(198, 7, 7);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: rgb(26, 134, 36);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+main {
+    padding: 40px;
+    min-height: 60vh;
+}
+
+footer {
+    background-color: #222;
+    color: rgb(177, 19, 19);
+    text-align: center;
+    padding: 10px;
+}
+header nav a.active {
+    color: #ffca28;
+    font-weight: bold;
+    border-bottom: 2px solid #ffca28;
+}
