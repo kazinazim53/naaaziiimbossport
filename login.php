@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if ($username === "admin" && $password === "12345678") {
+    if ($username === "Admin" && $password === "12345678nazim") {
         $_SESSION['admin_logged_in'] = true;
         header("Location: messages.php");
         exit;
@@ -37,11 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <form action="login.php" method="POST">
                     <div class="mb-3">
                         <label class="form-label font-weight-bold">Username</label>
-                        <input type="text" name="username" class="form-control" placeholder="admin" required>
+                        <input type="text" name="username" class="form-control" placeholder="It's you" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label font-weight-bold">Password</label>
-                        <input type="password" name="password" class="form-control" placeholder="12345678" required>
+                        <input type="password" name="password" class="form-control" placeholder="blank" required>
                     </div>
                     <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
                 </form>
